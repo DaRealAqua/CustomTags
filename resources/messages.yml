@@ -1,0 +1,11 @@
+---
+# Tags: {tag}, {line}, {player}
+
+# Messages
+messages:
+  no-perm: "§cYou don't have permission to use this tag!"
+  selected: "§7You selected {tag} §7tag."
+  already: "§cYou already have the {tag} §ctag!"
+  bought: "§7You bought the {tag} §7tag!"
+  no-money: "§cYou don't have enough money to buy the {tag} §ctag!"
+...
