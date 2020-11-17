@@ -5,7 +5,9 @@
 >
 >
 >
-> **📖How to create a tag**
+> **📖How to create Tags!**
+> Go to the config.yml file which is located in the plugin_data/CustomTags directory
+>
 >```
 > tags:
 >   tagName:
@@ -17,6 +19,7 @@
 > **Subscribe to my Channel!**
 >
 > [Youtube Channel](http://youtube.lexuspe.xyz)
+> [test](675028754707382303)
 >
 >
 >
