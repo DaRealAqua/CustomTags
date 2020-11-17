@@ -1,11 +1,11 @@
 > # TAGS PLUGIN
 >
-> 📜_Description: You can create unlimited tags. It has a menu where you can select to buy or equip the tags._ 
+> 📜Description: You can create unlimited tags. It has a menu where you can select to buy or equip the tags. 
 >
 >
 >
 >
-> How to create a tag:
+> **📖How to create a tag:**
 >```
 > tags:
 >   tagName:
@@ -30,7 +30,7 @@
 >
 >
 >
-> **What does the plugin have?**
+> **📚What does the plugin have?**
 >
 > - [x] create unlimited tags
 > - [x] tag shop
@@ -40,13 +40,13 @@
 >
 >
 >
-> **Credits**
+> **👥Credits**
 >
 > - DaRealAqua
 >
 >
 >
-> **Images**
+> **📸Images**
 >
 > ![Image1](https://cdn.discordapp.com/attachments/769268554956013569/777895015329300480/20201116_145411.jpg)
 > ![Image2](https://cdn.discordapp.com/attachments/769268554956013569/777895286252765184/20201116_145439.jpg)
