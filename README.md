@@ -6,6 +6,7 @@
 
 
  **📖How to create Tags!**
+
  Go to the config.yml file which is located in the plugin_data/CustomTags directory
 
 ```
