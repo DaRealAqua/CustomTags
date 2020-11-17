@@ -13,8 +13,8 @@
  tags:
    tagName:
      name: "nameColored"
-     perm: "Permission"
-     cost: "amount$$"
+     perm: Permission
+     cost: amount$$
 ```
 
  **Subscribe to my Channel!**
