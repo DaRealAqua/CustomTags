@@ -20,10 +20,6 @@ class Utils{
         return Main::getInstance()->tag->getAll()[strtolower($player->getName())]["tag"];
     }
 
-    /**
-     * @param Player $player
-     * @param $tag
-     */
     public static function setPlayerTag(Player $player, $tag) {
         Main::getInstance()->tag->setNested(strtolower($player->getName()) . ".tag", ($tag));
         Main::getInstance()->tag->save();
