@@ -38,6 +38,7 @@
  - [x] tag shop
  - [x] custom menu
  - [x] chat format
+ - [x] save the tag 
  - [x] economyAPI support
 
 
