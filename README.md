@@ -5,7 +5,7 @@
 >
 >
 >
-> **📖How to create a tag:**
+> **📖How to create a tag**
 >```
 > tags:
 >   tagName:
