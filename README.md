@@ -18,7 +18,7 @@
 
  **Subscribe to my Channel!**
 
- [Youtube Channel](http://youtube.lexuspe.xyz)
+ [YouTube Channel](http://youtube.lexuspe.xyz)
 
 
 
