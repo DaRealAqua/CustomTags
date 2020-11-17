@@ -26,7 +26,7 @@ class Utils{
      */
      public static function setPlayerTag(Player $player, $tag = NULL) {
         if ($tag !== NULL) {
-         Main::getInstance()->tag->setNested(strtolower($player->getName()) . ".tag", $tag);
+            Main::getInstance()->tag->setNested(strtolower($player->getName()) . ".tag", $tag);
             Main::getInstance()->tag->save();
         }
     }
