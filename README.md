@@ -1,6 +1,6 @@
 > # TAGS PLUGIN
 >
-> _Description: You can create unlimited tags. It has a menu where you can select to buy or equip the tags._ 
+> 📜_Description: You can create unlimited tags. It has a menu where you can select to buy or equip the tags._ 
 >
 >
 >
