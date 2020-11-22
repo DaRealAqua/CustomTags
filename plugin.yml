@@ -4,6 +4,9 @@ main: darealaqua\Main
 author: DaRealAqua
 api: 3.0.0
 version: 0.0.1
+mcpe-protocol:
+  - 408 # 1.16.20
+  - 419 # 1.16.100
 description: "A Custom Tags plugin made with love by DaRealAqua"
 website: discord.lexuspe.xyz
 ...
