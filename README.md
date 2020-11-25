@@ -1,4 +1,4 @@
- # CUSTOM_TAGS PLUGIN
+ # CUSTOM TAGS PLUGIN
 
  📜Description: You can create unlimited tags. It has a menu where you can select to buy or equip the tags. 
 
