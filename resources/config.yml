@@ -15,7 +15,7 @@
 #     perm: "Permission"
 #     cost: "amount$$"
 #
-# Tags: {line}, {money}, {tag}, {cost}
+# Tags: {line}, {money}, {tag}, {cost}, {player}, {permission}
 
 # Display the tag of the player
 chat-format: "{tag} {player}"
