@@ -36,9 +36,9 @@
 
  **Join my Discord Servers!**
 
- [LexusDevs Discord](https://discord.gg/nzTwkXM)
+ [AquaDevs Discord](https://discord.gg/5pxFZHmsC7)
 
- [LexusPE Discord](http://discord.lexuspe.xyz)
+ [Levania Discord](https://discord.gg/Axa33MgXJ9)
 
  
 
