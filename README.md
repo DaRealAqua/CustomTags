@@ -1,6 +1,6 @@
  # CUSTOM TAGS PLUGIN
 
-https://discord.com/api/guilds/646732504744853518/widget.jsongedge
+<img src="https://discordapp.com/api/guilds/646732504744853518/widget.png?style=banner2" alt="Discord Banner 2"/>
  
 
  Don't forget to read the description before using this plugin! 
