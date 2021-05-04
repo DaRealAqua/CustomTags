@@ -2,6 +2,9 @@
 
 <img src="https://discordapp.com/api/guilds/646732504744853518/widget.png?style=shield" alt="AquaDevs Discord"/>
 
+```php
+$this->pm($test);
+```
  Don't forget to read the description before using this plugin! 
 
  📜Description: You can create unlimited tags. It has a menu where you can select to buy or equip the tags. 
