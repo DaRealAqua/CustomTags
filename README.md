@@ -1,6 +1,8 @@
  # CUSTOM TAGS PLUGIN
 
  https://img.shields.io/discord/646732504744853518.svg?style=for-the-badge
+ 
+ https://discordapp.com/api/guilds/646732504744853518/widget.json
 
  Don't forget to read the description before using this plugin! 
 
