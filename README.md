@@ -1,7 +1,8 @@
  # CUSTOM TAGS PLUGIN
 
-https://img.shields.io/discord/<646732504744853518>.svg?style=for-the-badge
+ https://img.shields.io/discord/646732504744853518.svg?style=for-the-badge
 
+[s](https://img.shields.io/discord/646732504744853518.svg?style=for-the-badge)
  Don't forget to read the description before using this plugin! 
 
  📜Description: You can create unlimited tags. It has a menu where you can select to buy or equip the tags. 
