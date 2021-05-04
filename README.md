@@ -1,7 +1,6 @@
  # CUSTOM TAGS PLUGIN
 
-<img src="https://discordapp.com/api/guilds/646732504744853518/widget.png?style=banner2" alt="Discord Banner 2"/>
- 
+ <img src="https://discordapp.com/api/guilds/646732504744853518/widget.png?style=banner4" alt="AquaDevs Discord"/>
 
  Don't forget to read the description before using this plugin! 
 
