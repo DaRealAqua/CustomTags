@@ -97,5 +97,3 @@ menu-shop:
 
 
  **📸Images**
- 
- ![Image1](https://cdn.discordapp.com/attachments/769268554956013569/777895015329300480/20201116_145411)
