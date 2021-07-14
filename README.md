@@ -26,17 +26,17 @@ chat-format: "{tag} {player}"
 
 # Tags List
 tags:
-  lexuspe:
-    name: "§l§bLexus§dPE§r"
-    perm: lexuspe.tag
+  levania:
+    name: "§l§aLevania§r"
+    perm: levania.tag
     cost: 1000
   darealaqua:
     name: "§l§bDaRealAqua§r"
     perm: darealaqua.tag
     cost: 5000
-  lexusdevs:
-    name: "§l§cLexus§6Devs§r"
-    perm: lexusdevs.tag
+  aquadevs:
+    name: "§l§bAqua§eDevs§r"
+    perm: aquadevs.tag
     cost: 10000
 
 # Main menu of the Tags Menu
