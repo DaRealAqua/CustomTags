@@ -97,7 +97,7 @@ class Utils{
                 $tag = array_values(Main::getInstance()->config["tags"])[$data];
                 $myMoney = Main::getInstance()->economy->myMoney($player);
                 $cost = $tag["cost"];
-                if ($player->hasPermission($tag["perm"])) {
+                if ((Main::getInstance()->config["perm_for_all"] != "" && $player->hasPermission(Main::getInstance()->config["perm_for_all"])) || $player->hasPermission($tag["perm"])) {
                     $player->sendMessage(str_replace(["{player}", "{tag}"], [$player->getName(), $tag["name"]], Main::getInstance()->messages->getNested("messages.already")));
                 }else if($myMoney >= $cost){
                     Main::getInstance()->economy->reduceMoney($player, $cost);
