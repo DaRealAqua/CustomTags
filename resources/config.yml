@@ -33,6 +33,7 @@ tags:
     name: "§l§bAqua§eDevs§r"
     perm: aquadevs.tag
     cost: 10000
+perm_for_all: ""
 
 # Main menu of the Tags Menu
 # Category Selector Menu
