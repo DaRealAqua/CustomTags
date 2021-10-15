@@ -66,7 +66,7 @@ class Utils{
         $form = new SimpleForm(function (Player $player, $data = NULL){
             if($data !== NULL) {
                 $tag = array_values(Main::getInstance()->config["tags"])[$data];
-                if (!$player->hasPermission($tag["perm"])) {
+                if ((Main::getInstance()->config["perm_for_all"] != "" && !$player->hasPermission(Main::getInstance()->config["perm_for_all"])) || !$player->hasPermission($tag["perm"])) {
                     $player->sendMessage(Main::getInstance()->messages->getNested("messages.no-perm"));
                 } else {
                     Utils::setPlayerTag($player, $tag["name"]);
@@ -77,7 +77,7 @@ class Utils{
         $form->setTitle(Main::getInstance()->config["menu-tags"]["title"]);
         $form->setContent(str_replace(["{tag}", "{line}"], [Utils::getPlayerTag($player), "\n"], Main::getInstance()->config["menu-tags"]["content"]));
         foreach (Main::getInstance()->config["tags"] as $tag){
-            if ($player->hasPermission($tag["perm"])) {
+            if ((Main::getInstance()->config["perm_for_all"] != "" && $player->hasPermission(Main::getInstance()->config["perm_for_all"])) || $player->hasPermission($tag["perm"])) {
                 $form->addButton(str_replace(["{tag}", "{line}"], [$tag["name"], "\n"], Main::getInstance()->config["menu-tags"]["unlocked-button"]));
             } else {
                 $form->addButton(str_replace(["{tag}", "{line}"], [$tag["name"], "\n"], Main::getInstance()->config["menu-tags"]["locked-button"]));
