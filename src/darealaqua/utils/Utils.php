@@ -66,7 +66,7 @@ class Utils{
         $form = new SimpleForm(function (Player $player, $data = NULL){
             if($data !== NULL) {
                 $tag = array_values(Main::getInstance()->config["tags"])[$data];
-                if (!$player->hasPermission($tag["perm"])) {
+                if ((Main::getInstance()->config["perm_for_all"] != "" && !$player->hasPermission(Main::getInstance()->config["perm_for_all"])) || !$player->hasPermission($tag["perm"])) {
                     $player->sendMessage(Main::getInstance()->messages->getNested("messages.no-perm"));
                 } else {
                     Utils::setPlayerTag($player, $tag["name"]);
@@ -77,7 +77,7 @@ class Utils{
         $form->setTitle(Main::getInstance()->config["menu-tags"]["title"]);
         $form->setContent(str_replace(["{tag}", "{line}"], [Utils::getPlayerTag($player), "\n"], Main::getInstance()->config["menu-tags"]["content"]));
         foreach (Main::getInstance()->config["tags"] as $tag){
-            if ($player->hasPermission($tag["perm"])) {
+            if ((Main::getInstance()->config["perm_for_all"] != "" && $player->hasPermission(Main::getInstance()->config["perm_for_all"])) || $player->hasPermission($tag["perm"])) {
                 $form->addButton(str_replace(["{tag}", "{line}"], [$tag["name"], "\n"], Main::getInstance()->config["menu-tags"]["unlocked-button"]));
             } else {
                 $form->addButton(str_replace(["{tag}", "{line}"], [$tag["name"], "\n"], Main::getInstance()->config["menu-tags"]["locked-button"]));
@@ -96,9 +96,9 @@ class Utils{
             if($data !== NULL) {
                 $tag = array_values(Main::getInstance()->config["tags"])[$data];
                 $myMoney = Main::getInstance()->economy->myMoney($player);
-                $cost = $tag["cost"];
-                if ($player->hasPermission($tag["perm"])) {
-                    $player->sendMessage(str_replace(["{player}", "{tag}"], [$player->getName(), $tag["name"]], Main::getInstance()->messages->getNested("messages.already")));
+                $cost = $tag["cost"];              
+		if ((Main::getInstance()->config["perm_for_all"] != "" && $player->hasPermission(Main::getInstance()->config["perm_for_all"])) or $player->hasPermission($tag["perm"])) {
+                    $player->sendMessage(str_replace("{tag}", $tag["name"], Main::getInstance()->messages->getNested("messages.already")));
                 }else if($myMoney >= $cost){
                     Main::getInstance()->economy->reduceMoney($player, $cost);
                     Main::getInstance()->getServer()->dispatchCommand(new ConsoleCommandSender(), str_replace(["{player}", "{permission}"], [$player->getName(), $tag["perm"]], Main::getInstance()->config["menu-shop"]["command"]));
@@ -118,7 +118,7 @@ class Utils{
         foreach (Main::getInstance()->config["tags"] as $tag) {
             $form->addButton(str_replace(["{cost}", "{tag}", "{line}"], [number_format($tag["cost"]), $tag["name"], "\n"], Main::getInstance()->config["menu-shop"]["button"]));
         }
-        $form->sendToPlayer($player);
+        $player->sendForm($form);
         return $form;
     }
 }
