@@ -1,11 +1,7 @@
----
 # Tags: {tag}, {line}, {player}
-
-# Messages
-messages:
-  no-perm: "§cYou don't have permission to use this tag!"
-  selected: "§7You selected {tag} §7tag."
-  already: "§cYou already have the {tag} §ctag!"
-  bought: "§7You bought the {tag} §7tag!"
-  no-money: "§cYou don't have enough money to buy the {tag} §ctag!"
-...
+no-perm: "{prefix}You don't have permission to use this tag!"
+selected: "{prefix}You selected {tag} §7tag."
+reset: "{prefix}You have successfully reset your tag!"
+already: "{prefix}You have already {tag} §7tag!"
+bought: "{prefix}You bought the {tag} §7tag!"
+no-money: "{prefix}You don't have enough money to buy the {tag} §7tag!"
