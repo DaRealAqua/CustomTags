@@ -92,10 +92,10 @@ class API
 
     /**
      * @param Player $player
-     * @param $tag
+     * @param string $tag
      * @return void
      */
-    public function setPlayerTag(Player $player, $tag = null): void
+    public function setPlayerTag(Player $player, string $tag): void
     {
         $this->getPlayers()->setNested(strtolower($player->getName()) . ".tag", $tag);
         $this->getPlayers()->save();
