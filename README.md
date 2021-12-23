@@ -8,10 +8,7 @@
 
 
  **⚙️Depends!**
-
-```
  - EconomyAPI
-```
 
 
 
@@ -67,6 +64,4 @@ tags:
 
 
  **👥Credits**
-``
  - DaRealAqua
-``
