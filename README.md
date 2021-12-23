@@ -18,9 +18,12 @@
  Go to the tags.yml file which is located in the plugin_data/CustomTags directory
 
 ```php
- # Display the tag of the player
-chat-format: "{tag} {player}"
-
+tags:
+#   name:
+#     name: "nameColored"
+#     perm: "Permission"
+#     cost: "amount$$"
+#
 # Tags List
 tags:
   levania:
