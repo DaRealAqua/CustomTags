@@ -127,9 +127,9 @@ class API
     }
 
     /**
-     * @return array|Config
+     * @return Config
      */
-    public function getTags(): array
+    public function getTags(): Config
     {
         return $this->tags;
     }
