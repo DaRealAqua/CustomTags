@@ -18,7 +18,7 @@
 
  **📖How to create Tags!**
 
- Go to the config.yml file which is located in the plugin_data/CustomTags directory
+ Go to the tags.yml file which is located in the plugin_data/CustomTags directory
 
 ```php
  # Display the tag of the player
@@ -38,30 +38,6 @@ tags:
     name: "§l§bAqua§eDevs§r"
     perm: aquadevs.tag
     cost: 10000
-
-# Main menu of the Tags Menu
-# Category Selector Menu
-menu-selector:
-  title: "Tags Menu"
-  content: "§7Your current money:§c ${money}{line}§7Your current tag:§c {tag}{line}§r§7Select a category"
-  tags-button: "Available Tags{line}Click to Open"
-  shop-button: "Buy Tags{line}Click to Open"
-  exit-button: "§cExit the Menu"
-# Equip the tag u want, if you have the permission
-# Tags Menu
-menu-tags:
-  title: "Available Tags"
-  content: "§7Your current tag: §c{tag}"
-  locked-button: "{tag}{line}§r§cNot Available"
-  unlocked-button: "{tag}{line}§r§aAvailable"
-# Buy a tag
-# Tags Shop Menu
-menu-shop:
-  title: "Tags Shop"
-  content: "§7Your current money:§c ${money}"
-  button: "{tag}{line}§r§c${cost}"
-  # PureChat and PurePerm I currently use to set a player's permission but if you want you can use your own plugin.
-  command: "setuperm {player} {permission}"
 ```
 
  **Subscribe to my Channel!**
