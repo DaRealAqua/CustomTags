@@ -67,9 +67,6 @@ tags:
 
 
  **👥Credits**
-```
+``
  - DaRealAqua
-```
-
-
- **📸Images**
+``
