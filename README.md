@@ -59,7 +59,7 @@ tags:
 
  - [x] create unlimited tags
  - [x] tag shop
- - [x] custom menu
+ - [x] custom menus
  - [x] chat format
  - [x] save the tag 
  - [x] economyAPI support
