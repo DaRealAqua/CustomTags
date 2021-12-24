@@ -61,7 +61,6 @@ tags:
  - [x] tag shop
  - [x] custom menus
  - [x] chat format
- - [x] save the tag 
  - [x] economyAPI support
 
 
