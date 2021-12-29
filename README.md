@@ -62,8 +62,3 @@ tags:
  - [x] custom menus
  - [x] chat format
  - [x] economyAPI support
-
-
-
- **👥Credits**
- - DaRealAqua
