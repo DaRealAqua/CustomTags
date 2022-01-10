@@ -46,11 +46,6 @@ abstract class Form implements IForm {
         $this->callable = $callable;
     }
 
-    /**
-     * @param Player $player
-     * @param $data
-     * @return void
-     */
     public function handleResponse(Player $player, $data) : void {
         $this->processData($data);
         $callable = $this->getCallable();
@@ -59,10 +54,6 @@ abstract class Form implements IForm {
         }
     }
 
-    /**
-     * @param $data
-     * @return void
-     */
     public function processData(&$data) : void {
     }
 
