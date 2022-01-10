@@ -28,16 +28,12 @@ class Main extends PluginBase {
     /** @var API */
     private API $api;
 
-    /** @var EconomyAPI */
-    private EconomyAPI $economyAPI;
-
     /**
      * @return void
      */
     protected function onEnable() : void {
         self::setInstance($this);
         $this->api = new API($this);
-        $this->economyAPI = EconomyAPI::getInstance();
         $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
         $this->getServer()->getCommandMap()->register($this->getName(), new TagCommand($this));
     }
