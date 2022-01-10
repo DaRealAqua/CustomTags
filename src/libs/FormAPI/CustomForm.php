@@ -18,11 +18,7 @@ class CustomForm extends Form {
         $this->data["title"] = "";
         $this->data["content"] = [];
     }
-
-    /**
-     * @param $data
-     * @return void
-     */
+    
     public function processData(&$data) : void {
         if (is_array($data)) {
             $new = [];
