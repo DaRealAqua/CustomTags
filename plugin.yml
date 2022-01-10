@@ -1,0 +1,9 @@
+name: CustomTags
+main: customtags\darealaqua\Main
+author: DaRealAqua
+api: 4.0.0
+version: 0.0.2
+description: A Custom Tags plugin made with love by DaRealAqua
+website: discord.levania.eu
+depend:
+  - EconomyAPI

@@ -1,0 +1,21 @@
+# How to create a tag:
+# tags:
+#   name:
+#     name: "coloredName"
+#     perm: Permission
+#     cost: Price
+#
+# Available Tags
+tags:
+  levania:
+    name: "§l§aLevania§r"
+    perm: levania.tag
+    cost: 1000
+  darealaqua:
+    name: "§l§bDaRealAqua§r"
+    perm: darealaqua.tag
+    cost: 5000
+  aquadevs:
+    name: "§l§bAqua§eDevs§r"
+    perm: aquadevs.tag
+    cost: 10000
