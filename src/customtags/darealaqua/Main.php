@@ -16,7 +16,7 @@ namespace customtags\darealaqua;
 
 use customtags\darealaqua\command\TagCommand;
 use customtags\darealaqua\utils\API;
-use pocketmine\plugin\Plugin;
+use onebone\economyapi\EconomyAPI;
 use pocketmine\utils\SingletonTrait;
 use pocketmine\plugin\PluginBase;
 
@@ -28,8 +28,8 @@ class Main extends PluginBase {
     /** @var API */
     private API $api;
 
-    /** @var Plugin */
-    private Plugin $economyAPI;
+    /** @var EconomyAPI */
+    private EconomyAPI $economyAPI;
 
     /**
      * @return void
@@ -37,7 +37,7 @@ class Main extends PluginBase {
     protected function onEnable() : void {
         self::setInstance($this);
         $this->api = new API($this);
-        $this->economyAPI = $this->getServer()->getPluginManager()->getPlugin("EconomyAPI");
+        $this->economyAPI = EconomyAPI::getInstance();
         $this->getServer()->getPluginManager()->registerEvents(new EventListener($this), $this);
         $this->getServer()->getCommandMap()->register($this->getName(), new TagCommand($this));
     }
@@ -50,10 +50,10 @@ class Main extends PluginBase {
     }
 
     /**
-     * @return Plugin
+     * @return EconomyAPI
      */
-    public function getEconomyAPI() : Plugin {
-        return $this->economyAPI;
+    public function getEconomyAPI() : EconomyAPI {
+        return EconomyAPI::getInstance();
     }
 
 }
