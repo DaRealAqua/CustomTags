@@ -30,7 +30,7 @@ class EventListener implements Listener {
     }
 
     /**
-     * @priority NORMAL
+     * @priority HIGHEST
      * @param PlayerChatEvent $event
      * @return void
      */
